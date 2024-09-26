@@ -2,17 +2,17 @@
 
 DiamondTrap::DiamondTrap(void) : ClapTrap("Default_clap_name"), ScavTrap(), FragTrap() {
 	this->name = "Default";
-	_hitPoints = FragTrap::_hitPoints;
-	_energyPoints = ScavTrap::_energyPoints;
-	_attackDamage = FragTrap::_attackDamage;
+	_hitPoints = FragTrap::getHitPoints();
+	_energyPoints = ScavTrap::getEnergyPoints();
+	_attackDamage = FragTrap::getAttackDamage();
 	std::cout << "DiamondTrap " << name << " is born!" << std::endl;
 }
 
 DiamondTrap::DiamondTrap(str his_name) : ClapTrap(his_name + "_clap_name"), ScavTrap(his_name), FragTrap(his_name) {
 	this->name = his_name;
-	_hitPoints = FragTrap::_hitPoints;
-	_energyPoints = ScavTrap::_energyPoints;
-	_attackDamage = FragTrap::_attackDamage;
+	_hitPoints = FragTrap::getHitPoints();
+	_energyPoints = ScavTrap::getEnergyPoints();
+	_attackDamage = FragTrap::getAttackDamage();
 	std::cout << "DiamondTrap " << this->name << " created." << std::endl;
 }
 

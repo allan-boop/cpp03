@@ -45,3 +45,11 @@ void	FragTrap::highFivesGuys(void) {
 	std::cout << "FragTrap " << _name << " gives high fives!" << std::endl;
 	return ;
 }
+
+int	FragTrap::getHitPoints(void) {
+	return (_hitPoints);
+}
+
+int FragTrap::getAttackDamage(void) {
+	return (_attackDamage);
+}
