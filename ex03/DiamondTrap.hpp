@@ -1,6 +1,7 @@
 #pragma once
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
+#include <iostream>
 
 typedef std::string str;
 

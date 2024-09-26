@@ -1,4 +1,8 @@
 #include "DiamondTrap.hpp"
+#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
+#include "ClapTrap.hpp"
+#include <iostream>
 
 DiamondTrap::DiamondTrap(void) : ClapTrap("Default_clap_name"), ScavTrap(), FragTrap() {
 	this->name = "Default";

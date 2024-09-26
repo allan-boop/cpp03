@@ -1,4 +1,6 @@
 #include "FragTrap.hpp"
+#include "ClapTrap.hpp"
+#include <iostream>
 
 FragTrap::FragTrap(void) : ClapTrap() {
 	_hitPoints = 100;

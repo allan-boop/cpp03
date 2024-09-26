@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ClapTrap.hpp"
+#include <iostream>
 
 typedef std::string str;
 
